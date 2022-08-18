@@ -25,5 +25,7 @@ int main(){
         num[2] = num[0] / num[1];
         printf("%d",num[2]);
     }
-
+    else{
+        printf("Error");
+    }
 }
