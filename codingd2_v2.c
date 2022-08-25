@@ -17,8 +17,6 @@ int main(){
     int a,b,c,n;
     printf("Enter number : ");
     scanf("%d %d %d",&a,&b,&c);
-
-    //printf("Calculate : %d",case1(a,b,c));
     switch (case1(a,b,c))
     {
     case 1:
