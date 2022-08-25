@@ -20,14 +20,11 @@ int main(){
             }
     }
 
+    if(num[1]== max || num[2] == max || num[3] == max) mid = max;
+    if(num[1]== min || num[2] == min || num[3] == min) mid = min;
+
      for(int i =0;i<3;i++){
-        if(num[i]==max){
-            mid= max;
-        }
-        else if(num[i]==min){
-            mid = min;
-        }
-        else if(num[i]==max || num[i]==min){
+        if(num[i]==max || num[i]==min){
             continue;
         }
         else{
