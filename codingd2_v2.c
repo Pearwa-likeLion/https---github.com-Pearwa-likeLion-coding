@@ -1,5 +1,4 @@
 //จงเขียนโปรแกรมเพื่อรับค่าตัวเลข 3 จำนวน แล้วหาว่าจำนวนคู่ใดบวกกันแล้วได้ค่ามากที่สุด (Level 2)
-//string result = (time < 18) ? "Good day." : "Good evening.";
 
 #include <stdio.h>
 
