@@ -34,9 +34,6 @@ int main(){
             mid = num[i];
         }
     }
-    printf("Maximum : %d \n",max);
-    printf("Minimum : %d \n",min);
-    printf("Middle : %d \n",mid);
     printf("%d + %d is give the most value \n",max,mid);
 
 }
