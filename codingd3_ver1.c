@@ -3,8 +3,7 @@
 
 #include <stdio.h>
 #include <math.h>
-int testprime(int n ){
-
+int testprime(int n){
     int x=2;
         while (x < sqrt(n))
         {
@@ -14,7 +13,7 @@ int testprime(int n ){
             x++;
         }    
         return 1;
-    
+   
 }
 int main(){
     int num,count=0;
@@ -24,7 +23,6 @@ int main(){
         printf("Enter Number: ");
         scanf("%d",&num);
         if(num== -99)break;
-        //printf("Num : %d",num);
         if(testprime(num)==1){
             printf("%d is a prime number \n",num);
         }
