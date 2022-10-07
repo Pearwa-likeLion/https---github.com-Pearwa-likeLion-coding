@@ -9,8 +9,8 @@ static void XORSwap(int *a,int *b){
     if (*a!=*b)
     {
         *a = (*a & *b) + (*a | *b); // x กล่ายเป็น x + y
-        *b = *a + (!b) + 1; // y กลายเป็น x - y 
-        *a = *a + (!b) + 1; // x กลายเป็น x - y ซึ่งจะได้ค่า x
+        *b = *a + (~*b) + 1; // y กลายเป็น x - y 
+        *a = *a + (~*b) + 1; // x กลายเป็น x - y ซึ่งจะได้ค่า x
     }
     if (*a==*b){
         *a = *a + *b;
@@ -24,8 +24,6 @@ int main()
     int x, y;
     printf("Enter X , Y : ");
     scanf("%d %d", &x, &y);
-    x = x + y;
-    y = x - y;
-    x = x - y;
+    XORSwap(&x,&y);
     printf("Result from switch the value of x,y : %d %d",x,y);
 }
